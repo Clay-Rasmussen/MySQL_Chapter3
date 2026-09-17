@@ -1,4 +1,4 @@
-# MySQL Chapter3
+# MySQL Chapter3 - Single Table Queries
 ___
 
 ## Overview
