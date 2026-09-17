@@ -1,0 +1,22 @@
+/*****************************************************************
+Names: Clay Rasmussen, Michael Szigethy
+Date: 09-17-2026
+Chapter 3 Assignment
+GitHub URL: https://github.com/Clay-Rasmussen/MySQL_Chapter3
+*****************************************************************/
+
+/****************************************************************************************************
+Clay Rasmussen
+Query 1: Write a query that reports the following:
+ - inactive customers
+ - sorted by name (NOTE: if not stated, all order by clauses are the default ascending)
+ - Note: to thoroughly test the query, temporarily change the WHERE clause to report active customers
+****************************************************************************************************/
+SELECT 
+     customer_id, 
+	 CONCAT(last_name, ', ', first_name) AS cust_name,
+     email,
+	 active
+FROM customer
+WHERE active = 0
+ORDER BY last_name, first_name; 
