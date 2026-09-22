@@ -22,9 +22,23 @@ WHERE active = 0
 ORDER BY last_name, first_name; 
 
 /****************************************************************************************************
-Michael Szigethy
+Clay Rasmussen
 Query 2: Write a query that reports the following:
  - All customers with INVALID email addresses. A valid email address is the first name,
    a period, the last name, and @sakilacustomer.org. Example: debbie.johnson@sakilacustomer.org 
  - Note: to thoroughly test this query, temporarily change the WHERE clause to report VALID emails
 ****************************************************************************************************/
+SELECT customer_id, first_name, last_name, email, active, create_date
+FROM customer
+WHERE email != CONCAT(first_name, '.', last_name, '@sakilacustomer.org');
+
+/****************************************************************************************************
+Michael Szigethy
+Query 3: Write a query that reports the following:
+- the current rental rate, what a 30% increase would be, and the new rental rate
+- only report the ones that have a rental rate that increased by over $0.50
+- order the report by amount increased descending
+- round all calculated values to 2 decimal positions
+- Note: to fully test this query, temporarily comment out the WHERE clause
+****************************************************************************************************/
+SELECT 
