@@ -41,4 +41,19 @@ Query 3: Write a query that reports the following:
 - round all calculated values to 2 decimal positions
 - Note: to fully test this query, temporarily comment out the WHERE clause
 ****************************************************************************************************/
-SELECT 
+SELECT title, rental_rate,
+		round(rental_rate * 0.30, 2) AS amount_increased, 
+        round(rental_rate * 1.30, 2) AS new_rental_rate 
+FROM film
+WHERE round(rental_rate * 0.30, 2) >= 0.50
+ORDER BY amount_increased DESC;
+
+
+
+
+
+
+
+
+
+
