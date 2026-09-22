@@ -62,16 +62,25 @@ WHERE payment_date >= '2006-01-01' && amount > '1.00'
 ORDER BY amount;
 
 /****************************************************************************************************
+Michael Szigethy
 Query 5: Write a query that reports the following:
  displaying only the first 50 characters of the description; followed by …
  filter to only report rental durations between 3 and 6 (using the BETWEEN operator)
  sort by the rental duration descending
  Note: to thoroughly test, temporarily comment out the WHERE clause
 ****************************************************************************************************/
-
-
 SELECT title, CONCAT(LEFT(description, 50), '...')
 'info', rental_duration
 FROM film
 WHERE rental_duration BETWEEN '3' AND '6'
 ORDER BY rental_duration DESC
+
+/****************************************************************************************************
+Michael Szigethy
+Query 6: Write a query that reports the following:
+- films that have (trailers OR behind the scenes) special features but NOT commentaries
+(keep in mind films that have both trailers and behind the scenes special features might also have other features)
+- sort by title
+- Note: to thoroughly test, temporarily commend out the WHERE clause
+****************************************************************************************************/
+
