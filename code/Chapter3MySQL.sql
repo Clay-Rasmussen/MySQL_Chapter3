@@ -70,6 +70,8 @@ Query 5: Write a query that reports the following:
 ****************************************************************************************************/
 
 
-SELECT title, description AS 'info', rental_duration
+SELECT title, CONCAT(LEFT(description, 50), '...')
+'info', rental_duration
 FROM film
-WHERE rental_duration BETWEEN '3' AND '6';
+WHERE rental_duration BETWEEN '3' AND '6'
+ORDER BY rental_duration DESC
