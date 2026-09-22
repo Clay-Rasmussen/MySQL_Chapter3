@@ -109,5 +109,6 @@ Query 8: Write a query that reports the following:
 ****************************************************************************************************/
 SELECT title, description, rating
 FROM film
-WHERE description IN ('Robot', 'Squirrel')
+WHERE description LIKE '%Robot%'
+	AND description LIKE '%Squirrel%'
 ORDER BY title;
