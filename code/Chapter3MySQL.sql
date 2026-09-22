@@ -107,6 +107,7 @@ Query 8: Write a query that reports the following:
 - sort by title
 - Note: to thoroughly test this query, temporarily comment out the WHERE clause
 ****************************************************************************************************/
-
-
-
+SELECT title, description, rating
+FROM film
+WHERE description IN ('Robot', 'Squirrel')
+ORDER BY title;
