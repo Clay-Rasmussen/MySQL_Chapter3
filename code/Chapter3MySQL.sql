@@ -20,3 +20,11 @@ SELECT
 FROM customer
 WHERE active = 0
 ORDER BY last_name, first_name; 
+
+/****************************************************************************************************
+Michael Szigethy
+Query 2: Write a query that reports the following:
+ - All customers with INVALID email addresses. A valid email address is the first name,
+   a period, the last name, and @sakilacustomer.org. Example: debbie.johnson@sakilacustomer.org 
+ - Note: to thoroughly test this query, temporarily change the WHERE clause to report VALID emails
+****************************************************************************************************/
