@@ -73,7 +73,7 @@ SELECT title, CONCAT(LEFT(description, 50), '...')
 'info', rental_duration
 FROM film
 WHERE rental_duration BETWEEN '3' AND '6'
-ORDER BY rental_duration DESC
+ORDER BY rental_duration DESC;
 
 /****************************************************************************************************
 Michael Szigethy
@@ -83,4 +83,8 @@ Query 6: Write a query that reports the following:
 - sort by title
 - Note: to thoroughly test, temporarily commend out the WHERE clause
 ****************************************************************************************************/
+SELECT title, release_year, rating, special_features
+FROM film
+WHERE (special_features LIKE '%Trailers%' OR special_features LIKE '%Behind the Scenes%' AND special_features NOT LIKE '%Commentaries%')
+ORDER BY title ASC;
 
