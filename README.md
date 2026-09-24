@@ -62,43 +62,43 @@ ___
 ___
 **Query 1**
 
-![Query 1](assets/Querey_1.png)
+![Query 1](assets/Query_1.png)
 
 **Query 2**
 
-![Query 1](assets/Querey_2.png)
+![Query_2](assets/Query_2.png)
 
 **Query 3**
 
-![Query 1](assets/Querey_3.png)
+![Query 3](assets/Query_3.png)
 
 **Query 4**
 
-![Query 1](assets/Querey_4.png)
+![Query 4](assets/Query_4.png)
 
 **Query 5**
 
-![Query 1](assets/Querey_5.png)
+![Query 5](assets/Query_5.png)
 
 **Query 6**
 
-![Query 1](assets/Querey_6.png)
+![Query 6](assets/Query_6.png)
 
 **Query 7**
 
-![Query 1](assets/Querey_7.png)
+![Query 7](assets/Query_7.png)
 
 **Query 8**
 
-![Query 1](assets/Querey_8.png)
+![Query 8](assets/Query_8.png)
 
 **Query 9**
 
-![Query 1](assets/Querey_9.png)
+![Query 9](assets/Query_9.png)
 
 **Query 10**
 
-![Query 1](assets/Querey_10.png)
+![Query 10](assets/Query_10.png)
 
 ## Learning Outcomes
 ___
