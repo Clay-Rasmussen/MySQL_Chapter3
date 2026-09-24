@@ -134,4 +134,7 @@ Query 10: Write a query that reports the following:
 - limit the rows returned to start at the 2nd row and returning a total of 25 rows
 - Note: to thoroughly test this query, temporarily remove the limit clause
 ****************************************************************************************************/
-
+SELECT DISTINCT district
+FROM address
+ORDER BY district
+LIMIT 1, 25;
