@@ -51,8 +51,12 @@ ___
 
 ## Installation
 ___
-1. Clone the repository to your local machine. (or just steal my code)
-2. Put the code into VS Code in your mainframe of choice
+1. Clone the repository to your local machine. (Or just steal my code.)
+2. Install MySQL if it is not already installed.
+3. Download and install the Sakila sample database.
+4. Open the project in VS Code or your preferred SQL editor.
+5. Select the Sakila database before running the queries.
+6. Run each query individually to verify the results.
 
 ## Running Output
 ___
