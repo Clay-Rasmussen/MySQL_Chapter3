@@ -109,6 +109,29 @@ Query 8: Write a query that reports the following:
 ****************************************************************************************************/
 SELECT title, description, rating
 FROM film
-WHERE description LIKE '%Robot%'
-	AND description LIKE '%Squirrel%'
+WHERE description LIKE '%robot%' 
+  AND description LIKE '%squirrel%'
 ORDER BY title;
+
+/****************************************************************************************************
+Clay Rasmussen
+Query 9: Write a query that reports the following:
+- unique customers who have NOT returned their rental
+- sort by customer id
+- Note: to thoroughly test this query, temporarily change the WHERE clause to report rentals that
+ have been returned
+****************************************************************************************************/
+SELECT DISTINCT customer_id, return_date
+FROM rental
+WHERE return_date IS NULL
+ORDER BY customer_id;
+
+/****************************************************************************************************
+Michael Szigethy
+Query 10: Write a query that reports the following:
+- unique districts
+- sort by district
+- limit the rows returned to start at the 2nd row and returning a total of 25 rows
+- Note: to thoroughly test this query, temporarily remove the limit clause
+****************************************************************************************************/
+
